@@ -118,18 +118,24 @@ const time = "weekly"
 
 links[0].addEventListener("click", () => {
     for(let i = 0; i <= 7; i++){
+        times[i].classList.toggle("mostrar")
+        lastTime[i].classList.toggle("mostrar")
         times[i].innerHTML = datos[i].timeframes.daily.current + "hrs"
         lastTime[i].innerHTML = "Yesterday - " + datos[i].timeframes.daily.previous + "hrs"
     }
 })
 links[1].addEventListener("click", () => {
     for(let i = 0; i <= 7; i++){
+        times[i].classList.toggle("mostrar")
+        lastTime[i].classList.toggle("mostrar")
         times[i].innerHTML = datos[i].timeframes.weekly.current + "hrs"
         lastTime[i].innerHTML = "Last Week - " + datos[i].timeframes.weekly.previous + "hrs"
     }
 })
 links[2].addEventListener("click", () => {
     for(let i = 0; i <= 7; i++){
+        times[i].classList.toggle("mostrar")
+        lastTime[i].classList.toggle("mostrar")
         times[i].innerHTML = datos[i].timeframes.monthly.current + "hrs"
         lastTime[i].innerHTML = "Last Month - " + datos[i].timeframes.monthly.previous + "hrs"
     }

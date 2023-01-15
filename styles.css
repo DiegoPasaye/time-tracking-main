@@ -179,11 +179,22 @@ a:visited{
 .card-header img{
     cursor: pointer;
 }
+.mostrar{
+    animation: opacity 2s;
+}
 @keyframes color-card{
     100%{background: hsl(246, 80%, 60%);}
 }
 @keyframes color-links{
     100%{color: white;}
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 @media (max-width: 1200px){
     .left-top{
